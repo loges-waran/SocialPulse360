@@ -1,0 +1,13 @@
+SOCIALPULSE 360 - SENTIMENT ANALYSIS REPORT
+==========================================
+Dataset: Tamil-English Social Media
+Total Records: 15601
+
+Positive: 10439 (66.91%)
+Negative: 2032 (13.02%)
+Mixed feelings: 1790 (11.47%)
+Unknown state: 847 (5.43%)
+Not-Tamil: 493 (3.16%)
+
+Technology: Apache Hadoop MapReduce
+Analysis: Sentiment classification count
