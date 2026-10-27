@@ -1,0 +1,19 @@
+SOCIALPULSE 360 - TREND ANALYTICS REPORT
+=======================================
+Technology: Apache Hadoop MapReduce
+Analysis: Word Frequency
+
+Top 10 Frequent Words:
+1. thala    - 2732
+2. like     - 2363
+3. mass     - 1732
+4. veraa    - 1512
+5. trailer  - 1506
+6. level    - 1239
+7. movie    - 1099
+8. fans     - 1087
+9. super    - 1032
+10. la      - 974
+
+Note: These are frequent words in the dataset,
+not proof of changes in popularity over time.

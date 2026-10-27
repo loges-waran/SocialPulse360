@@ -58,3 +58,12 @@ Desktop.ini
 .env
 .env.local
 .env.production
+
+# Generated files
+*.jar
+
+# Large datasets — keep them locally, exclude from Git
+data/raw/
+data/processed/
+backend/data/raw/
+backend/data/processed/
