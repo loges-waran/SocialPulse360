@@ -1,0 +1,3 @@
+negative	16
+neutral	11
+positive	22

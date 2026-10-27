@@ -1,0 +1,434 @@
+[
+  {
+    "id": 1,
+    "text": "High-speed optical fiber connectivity is expanding to rural industrial zones! Truly great infrastructure milestone. #DigitalIndia #SDG9 #Innovation",
+    "timestamp": "2026-10-20 09:15:00",
+    "author": "@tech_guru",
+    "hashtags": "#DigitalIndia #SDG9 #Innovation",
+    "likes": 142,
+    "retweets": 38
+  },
+  {
+    "id": 2,
+    "text": "Modern cloud computing and distributed systems make big data analytics accessible to startups. Exciting progress! #BigData #CloudComputing #Tech",
+    "timestamp": "2026-10-20 10:30:00",
+    "author": "@cloud_architect",
+    "hashtags": "#BigData #CloudComputing #Tech",
+    "likes": 89,
+    "retweets": 21
+  },
+  {
+    "id": 3,
+    "text": "Severe delays in high-speed rail corridor construction due to logistics failure. Very poor project management. #Infrastructure #Railways #Delay",
+    "timestamp": "2026-10-20 11:45:00",
+    "author": "@infra_watcher",
+    "hashtags": "#Infrastructure #Railways #Delay",
+    "likes": 310,
+    "retweets": 85
+  },
+  {
+    "id": 4,
+    "text": "Renewable energy integration in modern smart factories reduces carbon emissions significantly. Sustainable future! #CleanEnergy #SmartIndustry #SDG9",
+    "timestamp": "2026-10-20 14:00:00",
+    "author": "@eco_engineer",
+    "hashtags": "#CleanEnergy #SmartIndustry #SDG9",
+    "likes": 215,
+    "retweets": 64
+  },
+  {
+    "id": 5,
+    "text": "Network outage across downtown tech park disrupted all data center operations for 4 hours. Horrible experience! #NetworkDown #Outage #TechFail",
+    "timestamp": "2026-10-20 16:20:00",
+    "author": "@sysadmin_chennai",
+    "hashtags": "#NetworkDown #Outage #TechFail",
+    "likes": 540,
+    "retweets": 192
+  },
+  {
+    "id": 6,
+    "text": "Standard quarterly maintenance scheduled for server clusters between 2 AM and 4 AM UTC tonight. #DevOps #Maintenance",
+    "timestamp": "2026-10-20 18:00:00",
+    "author": "@ops_lead",
+    "hashtags": "#DevOps #Maintenance",
+    "likes": 25,
+    "retweets": 4
+  },
+  {
+    "id": 7,
+    "text": "New AI-driven smart traffic monitoring deployed across metropolitan bridges. Commute times improved by 18%! #SmartCity #AI #Innovation",
+    "timestamp": "2026-10-21 08:30:00",
+    "author": "@traffic_analyst",
+    "hashtags": "#SmartCity #AI #Innovation",
+    "likes": 430,
+    "retweets": 95
+  },
+  {
+    "id": 8,
+    "text": "The latest software patch broke our automated pipeline. Complete disaster and waste of developer time. #DevOpsFail #BugAlert",
+    "timestamp": "2026-10-21 11:10:00",
+    "author": "@codewarrior",
+    "hashtags": "#DevOpsFail #BugAlert",
+    "likes": 188,
+    "retweets": 47
+  },
+  {
+    "id": 9,
+    "text": "Annual industrial automation summit kicks off next Monday with delegates from 40 countries. #Industry40 #Manufacturing #SDG9",
+    "timestamp": "2026-10-21 13:00:00",
+    "author": "@summit_desk",
+    "hashtags": "#Industry40 #Manufacturing #SDG9",
+    "likes": 76,
+    "retweets": 15
+  },
+  {
+    "id": 10,
+    "text": "Intha movie semma mass ah irukku! Screenplay and background music vera level bro. Highly recommended! #TamilCinema #MassMovie #Blockbuster",
+    "timestamp": "2026-10-21 15:45:00",
+    "author": "@cinemalover99",
+    "hashtags": "#TamilCinema #MassMovie #Blockbuster",
+    "likes": 890,
+    "retweets": 310
+  },
+  {
+    "id": 11,
+    "text": "Chennai Super Kings match innaiku semma thrilling ah pochu! Dhoni finish vera level mass da! #CSK #WhistlePodu #IPL",
+    "timestamp": "2026-10-21 19:30:00",
+    "author": "@csk_fanatic",
+    "hashtags": "#CSK #WhistlePodu #IPL",
+    "likes": 1540,
+    "retweets": 620
+  },
+  {
+    "id": 12,
+    "text": "New metro line extension semma fast and clean ah irukku. Office reach aaga romba helpful. Thanks CMRL! #ChennaiMetro #PublicTransit #SDG9",
+    "timestamp": "2026-10-22 09:00:00",
+    "author": "@chennaite_07",
+    "hashtags": "#ChennaiMetro #PublicTransit #SDG9",
+    "likes": 670,
+    "retweets": 140
+  },
+  {
+    "id": 13,
+    "text": "Intha AI tool romba useful ah irukku project work-ku. Time semmaya save aaguthu, super product! #Productivity #AI #Innovation",
+    "timestamp": "2026-10-22 10:15:00",
+    "author": "@student_coder",
+    "hashtags": "#Productivity #AI #Innovation",
+    "likes": 240,
+    "retweets": 52
+  },
+  {
+    "id": 14,
+    "text": "Oru nalla wholesome family entertainer movie. Songs and comedy romba azhaga irukku! #FamilyEntertainer #TamilSongs",
+    "timestamp": "2026-10-22 14:20:00",
+    "author": "@koli_critic",
+    "hashtags": "#FamilyEntertainer #TamilSongs",
+    "likes": 310,
+    "retweets": 48
+  },
+  {
+    "id": 15,
+    "text": "College campus placement drive semma super ah mudinjathu. All my friends got placed in top product companies! Romba magizhchi! #Placements #Success",
+    "timestamp": "2026-10-22 17:00:00",
+    "author": "@grad_techie",
+    "hashtags": "#Placements #Success",
+    "likes": 850,
+    "retweets": 190
+  },
+  {
+    "id": 16,
+    "text": "Kovai modern smart road project nalla progress aguthu. Pedestrian walking area romba neat ah panni irukaanga. #SmartCity #Coimbatore #SDG9",
+    "timestamp": "2026-10-23 08:45:00",
+    "author": "@kovai_live",
+    "hashtags": "#SmartCity #Coimbatore #SDG9",
+    "likes": 420,
+    "retweets": 88
+  },
+  {
+    "id": 17,
+    "text": "Tamil nadu industrial growth rate vera level record break pannirukku intha quarter. Great achievement! #TNIndustrial #EconomicGrowth #SDG9",
+    "timestamp": "2026-10-23 11:30:00",
+    "author": "@biz_observer",
+    "hashtags": "#TNIndustrial #EconomicGrowth #SDG9",
+    "likes": 780,
+    "retweets": 230
+  },
+  {
+    "id": 18,
+    "text": "Food delivery semma fast ah vanthuduchu, taste super ah irukku! #FoodieChennai #BiryaniLove",
+    "timestamp": "2026-10-23 13:40:00",
+    "author": "@chennaifoodie",
+    "hashtags": "#FoodieChennai #BiryaniLove",
+    "likes": 195,
+    "retweets": 22
+  },
+  {
+    "id": 19,
+    "text": "Startup hub incubation center opening in Trichy! Romba perumai ah irukku tier 2 cities develop aagurathu. #Startups #Trichy #Innovation",
+    "timestamp": "2026-10-23 16:15:00",
+    "author": "@startup_tn",
+    "hashtags": "#Startups #Trichy #Innovation",
+    "likes": 520,
+    "retweets": 115
+  },
+  {
+    "id": 20,
+    "text": "Worst customer service from broadband team. 3 days ah internet cut, romba mokka response and useless support! #BroadbandDown #WorstService #Fail",
+    "timestamp": "2026-10-24 09:10:00",
+    "author": "@angry_user21",
+    "hashtags": "#BroadbandDown #WorstService #Fail",
+    "likes": 430,
+    "retweets": 112
+  },
+  {
+    "id": 21,
+    "text": "Padam romba mokka. Screenplay waste, logic illatha cringe scenes. Total money waste time waste! #MovieReview #Flop #Disappointed",
+    "timestamp": "2026-10-24 12:20:00",
+    "author": "@cinema_watcher",
+    "hashtags": "#MovieReview #Flop #Disappointed",
+    "likes": 620,
+    "retweets": 210
+  },
+  {
+    "id": 22,
+    "text": "Traffic in OMR during peak hours is horrible. 2 hours stuck in same signal, romba kodumai da! #OMRTraffic #ChennaiTraffic #Gridlock",
+    "timestamp": "2026-10-24 18:30:00",
+    "author": "@omr_commuter",
+    "hashtags": "#OMRTraffic #ChennaiTraffic #Gridlock",
+    "likes": 890,
+    "retweets": 340
+  },
+  {
+    "id": 23,
+    "text": "E-commerce delivery delay 10 days aachu. Parcel missing nu solraanga, romba mosam and fraud behaviour! #ConsumerCourt #ScamAlert #DeliveryDelay",
+    "timestamp": "2026-10-24 20:15:00",
+    "author": "@buyer_beware",
+    "hashtags": "#ConsumerCourt #ScamAlert #DeliveryDelay",
+    "likes": 350,
+    "retweets": 95
+  },
+  {
+    "id": 24,
+    "text": "Mobile banking app crash aagite irukku update pannathuku aprom. OTP vara maatudhu, kevalamana banking app! #AppCrash #BankIssues #WorstApp",
+    "timestamp": "2026-10-25 08:20:00",
+    "author": "@fintech_user",
+    "hashtags": "#AppCrash #BankIssues #WorstApp",
+    "likes": 580,
+    "retweets": 180
+  },
+  {
+    "id": 25,
+    "text": "Bus stop shed broken condition la irukku, rain vandha shelter illa. Romba waste maintenance by corporation. #PublicFacility #PoorMaintenance #CivilIssues",
+    "timestamp": "2026-10-25 11:05:00",
+    "author": "@citizen_voice",
+    "hashtags": "#PublicFacility #PoorMaintenance #CivilIssues",
+    "likes": 290,
+    "retweets": 70
+  },
+  {
+    "id": 26,
+    "text": "New mobile phone heating issue romba athigama irukku. Battery drain within 3 hours, absolutely waste purchase! #PhoneReview #Disaster #HeatingIssue",
+    "timestamp": "2026-10-25 14:40:00",
+    "author": "@gadget_buyer",
+    "hashtags": "#PhoneReview #Disaster #HeatingIssue",
+    "likes": 410,
+    "retweets": 88
+  },
+  {
+    "id": 27,
+    "text": "Electricity power cut since morning without any prior notification. Romba kashtam work from home panna mudiyala. #PowerCut #TNEB #Frustrated",
+    "timestamp": "2026-10-25 16:30:00",
+    "author": "@wfh_engineer",
+    "hashtags": "#PowerCut #TNEB #Frustrated",
+    "likes": 720,
+    "retweets": 260
+  },
+  {
+    "id": 28,
+    "text": "மிகவும் அருமையான புதிய தகவல் தொழில்நுட்ப பூங்கா திறப்பு விழா! வேலைவாய்ப்புகள் அதிகரிக்கும். #TamilNadu #ITPark #Innovation #SDG9",
+    "timestamp": "2026-10-25 17:45:00",
+    "author": "@tamil_daily",
+    "hashtags": "#TamilNadu #ITPark #Innovation #SDG9",
+    "likes": 940,
+    "retweets": 280
+  },
+  {
+    "id": 29,
+    "text": "மோசமான சேவை, ரயில் தாமதமாக வந்து சேர்ந்தது. மக்கள் மிகவும் அவதிப்படுகின்றனர். #Railway #Delay #PublicIssue",
+    "timestamp": "2026-10-25 19:10:00",
+    "author": "@tn_traveler",
+    "hashtags": "#Railway #Delay #PublicIssue",
+    "likes": 380,
+    "retweets": 95
+  },
+  {
+    "id": 30,
+    "text": "புதிய சூரிய ஒளி மின் உற்பத்தி திட்டம் வெற்றிகரமாக செயல்படுத்தப்பட்டது. பாராட்டுக்கள்! #SolarEnergy #GreenTN #SDG9",
+    "timestamp": "2026-10-26 09:30:00",
+    "author": "@green_tamil",
+    "hashtags": "#SolarEnergy #GreenTN #SDG9",
+    "likes": 610,
+    "retweets": 175
+  },
+  {
+    "id": 31,
+    "text": "சாலையில் பாதாள சாக்கடை நீர் தேங்கி சுகாதார சீர்கேடு ஏற்பட்டுள்ளது. அதிகாரிகள் நடவடிக்கை எடுக்க வேண்டும். #DrainageIssue #CivicAlert",
+    "timestamp": "2026-10-26 11:15:00",
+    "author": "@civic_watch_tn",
+    "hashtags": "#DrainageIssue #CivicAlert",
+    "likes": 420,
+    "retweets": 110
+  },
+  {
+    "id": 32,
+    "text": "Weather department announces moderate cloud cover and pleasant temperatures across South India for the weekend. #WeatherReport #SouthIndia",
+    "timestamp": "2026-10-26 12:40:00",
+    "author": "@met_bulletin",
+    "hashtags": "#WeatherReport #SouthIndia",
+    "likes": 95,
+    "retweets": 12
+  },
+  {
+    "id": 33,
+    "text": "Tamil Nadu higher education department published standard examination schedule for autonomous engineering colleges. #AnnaUniversity #ExamSchedule",
+    "timestamp": "2026-10-26 14:00:00",
+    "author": "@education_tn",
+    "hashtags": "#AnnaUniversity #ExamSchedule",
+    "likes": 450,
+    "retweets": 130
+  },
+  {
+    "id": 34,
+    "text": "Railway ministry announced special festival express trains between Chennai Central and Tirunelveli. #SpecialTrains #SouthernRailway",
+    "timestamp": "2026-10-26 15:30:00",
+    "author": "@rail_updates",
+    "hashtags": "#SpecialTrains #SouthernRailway",
+    "likes": 310,
+    "retweets": 82
+  },
+  {
+    "id": 35,
+    "text": "Census and urban infrastructure survey scheduled to begin in tier 2 municipal corporations from November. #UrbanPlanning #Infrastructure #SDG9",
+    "timestamp": "2026-10-26 16:45:00",
+    "author": "@gov_stats",
+    "hashtags": "#UrbanPlanning #Infrastructure #SDG9",
+    "likes": 120,
+    "retweets": 24
+  },
+  {
+    "id": 36,
+    "text": "Revolutionary breakthroughs in electric vehicle battery manufacturing reduce charging time to 15 minutes! #EV #CleanTech #SDG9 #Innovation",
+    "timestamp": "2026-10-26 18:00:00",
+    "author": "@ev_enthusiast",
+    "hashtags": "#EV #CleanTech #SDG9 #Innovation",
+    "likes": 1120,
+    "retweets": 420
+  },
+  {
+    "id": 37,
+    "text": "Cryptocurrency flash crash wipes out billions in decentralized finance protocols. Tremendous loss for retail investors. #CryptoCrash #MarketDrop",
+    "timestamp": "2026-10-26 19:30:00",
+    "author": "@market_analyst",
+    "hashtags": "#CryptoCrash #MarketDrop",
+    "likes": 840,
+    "retweets": 310
+  },
+  {
+    "id": 38,
+    "text": "Intha hackathon experience vera level learning tharuthu! Team built a full stack big data pipeline in 24 hours. Super happy! #Hackathon #BigData #Python",
+    "timestamp": "2026-10-27 08:30:00",
+    "author": "@hacker_kumar",
+    "hashtags": "#Hackathon #BigData #Python",
+    "likes": 680,
+    "retweets": 160
+  },
+  {
+    "id": 39,
+    "text": "Server storage limit reached on Hadoop HDFS cluster. Block replication pending for batch dataset. Monitoring node health. #Hadoop #HDFS #SysAdmin",
+    "timestamp": "2026-10-27 10:00:00",
+    "author": "@data_ops",
+    "hashtags": "#Hadoop #HDFS #SysAdmin",
+    "likes": 85,
+    "retweets": 14
+  },
+  {
+    "id": 40,
+    "text": "Makkale intha new restaurant food waste. Semma spicy but zero taste, mosamana experience. Don't waste your money! #FoodReview #ChennaiEats #Disappointed",
+    "timestamp": "2026-10-27 12:15:00",
+    "author": "@foodie_ram",
+    "hashtags": "#FoodReview #ChennaiEats #Disappointed",
+    "likes": 290,
+    "retweets": 65
+  },
+  {
+    "id": 41,
+    "text": "Modern automated toll plazas with FASTag 3.0 seamless integration launched today. Journey times reduced dramatically. #HighwayTech #Infrastructure #SDG9",
+    "timestamp": "2026-10-27 14:00:00",
+    "author": "@road_transport",
+    "hashtags": "#HighwayTech #Infrastructure #SDG9",
+    "likes": 590,
+    "retweets": 140
+  },
+  {
+    "id": 42,
+    "text": "Kovai bypass road repair works completed on schedule. Smooth driving experience now! Semma work by NHAI team. #Coimbatore #NHAI #Infrastructure",
+    "timestamp": "2026-10-27 15:30:00",
+    "author": "@kovai_rider",
+    "hashtags": "#Coimbatore #NHAI #Infrastructure",
+    "likes": 430,
+    "retweets": 92
+  },
+  {
+    "id": 43,
+    "text": "Flight got delayed by 6 hours without any food or water voucher provided by airline staff. Truly sickening service! #AirlineFail #CustomerRights #FlightDelayed",
+    "timestamp": "2026-10-27 16:45:00",
+    "author": "@frequent_flyer",
+    "hashtags": "#AirlineFail #CustomerRights #FlightDelayed",
+    "likes": 710,
+    "retweets": 220
+  },
+  {
+    "id": 44,
+    "text": "Super happy to announce our new open source Python package for Tanglish NLP and sentiment classification! Star it on GitHub. #OpenSource #NLP #Python",
+    "timestamp": "2026-10-27 17:30:00",
+    "author": "@oss_developer",
+    "hashtags": "#OpenSource #NLP #Python",
+    "likes": 980,
+    "retweets": 340
+  },
+  {
+    "id": 45,
+    "text": "International Conference on Big Data Analytics and Sustainable Industrial Innovation commences tomorrow morning. #BigData #SDG9 #Research",
+    "timestamp": "2026-10-27 18:15:00",
+    "author": "@conference_desk",
+    "hashtags": "#BigData #SDG9 #Research",
+    "likes": 160,
+    "retweets": 28
+  },
+  {
+    "id": 46,
+    "text": "Software industry layoffs continue to impact thousands of families. Extremely depressing and stressful times for tech workers. #TechLayoffs #IndustryCrisis",
+    "timestamp": "2026-10-27 19:00:00",
+    "author": "@tech_worker_voice",
+    "hashtags": "#TechLayoffs #IndustryCrisis",
+    "likes": 1250,
+    "retweets": 480
+  },
+  {
+    "id": 47,
+    "text": "5G industrial private networks enabled in Sriperumbudur manufacturing corridor. Excellent connectivity boost for smart factories! #5G #SmartIndustry #SDG9",
+    "timestamp": "2026-10-27 19:45:00",
+    "author": "@telecom_digest",
+    "hashtags": "#5G #SmartIndustry #SDG9",
+    "likes": 740,
+    "retweets": 185
+  },
+  {
+    "id": 48,
+    "text": "Online shopping delivered damaged product, replacement request rejected unfairly. Worst shopping app in India! #ShoppingFail #Fraud #ConsumerComplaint",
+    "timestamp": "2026-10-27 20:10:00",
+    "author": "@angry_consumer",
+    "hashtags": "#ShoppingFail #Fraud #ConsumerComplaint",
+    "likes": 390,
+    "retweets": 110
+  }
+]

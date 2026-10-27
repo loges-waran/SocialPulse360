@@ -1,0 +1,5 @@
+distributed	1
+hadoop	3
+hdfs	1
+mapreduce	2
+system	1
