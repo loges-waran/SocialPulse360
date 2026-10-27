@@ -1,8 +1,8 @@
 /**
  * API client for SocialPulse 360 backend.
  */
-
-const API_BASE = import.meta.env.VITE_API_BASE || '';
+const RAW_API_BASE = import.meta.env.VITE_API_BASE || '';
+const API_BASE = RAW_API_BASE.replace(/\/+$/, '');
 
 export async function fetchHealth() {
   const res = await fetch(`${API_BASE}/api/health`);

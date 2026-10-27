@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # SocialPulse 360 — Social Media Sentiment & Trend Analytics
 
 [![Big Data Analytics](https://img.shields.io/badge/Big_Data-Hadoop_MapReduce-blue.svg)](https://hadoop.apache.org/)
@@ -8,7 +7,7 @@
 [![SDG 9](https://img.shields.io/badge/SDG_9-Industry,_Innovation_%26_Infrastructure-FD6925.svg)](https://sdgs.un.org/goals/goal9)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-An industry-standard Big Data Analytics (BDA) mini-project designed to analyze **Tamil-English (Tanglish)** and **English** social media discourse. Built using **Apache Hadoop, HDFS, and MapReduce** concepts, an explainable **NLP Sentiment Classifier**, a **FastAPI backend**, and a **React + Vite dark-themed analytics dashboard**.
+An industry-standard Big Data Analytics (BDA) platform designed to analyze **Tamil-English (Tanglish)** and **English** social media discourse. Built using **Apache Hadoop, HDFS, and MapReduce** concepts, an explainable **NLP Sentiment Classifier**, a **FastAPI backend**, and a modern **React + Vite dark-themed analytics dashboard**.
 
 Aligned with **United Nations Sustainable Development Goal 9 (SDG 9: Industry, Innovation, and Infrastructure)**.
 
@@ -23,35 +22,36 @@ Aligned with **United Nations Sustainable Development Goal 9 (SDG 9: Industry, I
 5. [Dataset Management & Tanglish Support](#5-dataset-management--tanglish-support)
 6. [MapReduce Processing Pipeline](#6-mapreduce-processing-pipeline)
 7. [Installation & Windows Setup Guide](#7-installation--windows-setup-guide)
-8. [Running the Application](#8-running-the-application)
-9. [Hadoop Cluster & HDFS Instructions](#9-hadoop-cluster--hdfs-instructions)
-10. [REST API Documentation](#10-rest-api-documentation)
-11. [Testing & Verification](#11-testing--verification)
-12. [Limitations & Future Enhancements](#12-limitations--future-enhancements)
-13. [GitHub Upload Instructions](#13-github-upload-instructions)
+8. [Running the Application Locally](#8-running-the-application-locally)
+9. [Production Deployment Guide (Vercel & Render)](#9-production-deployment-guide-vercel--render)
+10. [Hadoop Cluster & HDFS Instructions](#10-hadoop-cluster--hdfs-instructions)
+11. [REST API Documentation](#11-rest-api-documentation)
+12. [Testing & Verification](#12-testing--verification)
+13. [Limitations & Future Enhancements](#13-limitations--future-enhancements)
+14. [License](#license)
 
 ---
 
 ## 1. Project Overview & Objectives
 
-**SocialPulse 360** transforms social media streams into structured sentiment and trend intelligence. It answers critical questions:
-- What is the breakdown of **positive, negative, and neutral** sentiment across public posts?
-- What are the **top trending words** and **viral hashtags**?
-- How does citizen sentiment **change across dates**?
-- Which specific expressions are associated with **positive praise** versus **negative grievances**?
-- How can distributed **Hadoop MapReduce** algorithms process unstructured social data at scale?
+**SocialPulse 360** transforms social media streams into structured sentiment and trend intelligence:
+- Quantifies **positive, negative, and neutral** sentiment distributions.
+- Extracts **top trending words** and **viral hashtags**.
+- Tracks **daily sentiment shifts** over time via timeline curves.
+- Identifies specific expressions associated with **praise vs. infrastructure grievances**.
+- Demonstrates distributed **Hadoop MapReduce** execution with verified telemetry.
 
 ---
 
 ## 2. Problem Statement & SDG 9 Alignment
 
 ### Problem Statement
-Standard social analytics tools either require expensive commercial cloud licenses or are strictly English-centric. In multilingual hubs like Tamil Nadu, citizens communicate extensively in **Tanglish** (phonetic Tamil written using Latin English characters, e.g., *"Intha movie semma mass ah irukku"*, *"Service romba waste and mokka"*). Existing tools fail to recognize these emotional indicators. Furthermore, academic projects often discuss Hadoop theoretically without actual verifiable MapReduce implementations.
+Standard social analytics tools are largely English-centric and fail on regional code-mixed dialects. In Tamil Nadu and the broader diaspora, millions communicate in **Tanglish** (phonetic Tamil written using Latin script, e.g., *"Intha movie semma mass ah irukku"*, *"Worst customer service romba waste"*). Furthermore, academic projects often discuss Big Data conceptually without actual working MapReduce jobs.
 
 ### SDG 9 Alignment: Industry, Innovation, and Infrastructure
-SocialPulse 360 is mapped directly to **SDG Target 9.1 & 9.c**:
-- **Target 9.1 (Resilient Infrastructure):** Monitors public sentiment regarding mass transit systems (Chennai Metro CMRL, Southern Railways), highway corridors (OMR, NHAI), and public utilities to detect infrastructure bottlenecks.
-- **Target 9.c (Universal ICT Access):** Identifies regional telecom outages, broadband disruptions, and 5G network rollouts from citizen tweets.
+SocialPulse 360 is mapped directly to **UN SDG Target 9.1 & 9.c**:
+- **Target 9.1 (Resilient Infrastructure):** Monitors citizen feedback on public transit (Chennai Metro CMRL, Southern Railways), road congestion (OMR, NHAI), and power grids.
+- **Target 9.c (Universal ICT Access):** Tracks citizen discourse on telecom outages, broadband downtime, and 5G network rollouts.
 - **Target 9.5 (Technological Capabilities):** Delivers an open, transparent, explainable NLP engine for low-resource code-mixed languages.
 
 ---
@@ -59,21 +59,21 @@ SocialPulse 360 is mapped directly to **SDG Target 9.1 & 9.c**:
 ## 3. System Architecture
 
 ```
-Data Ingestion (CSV / JSON)
+Social Media Ingestion (CSV / JSON)
         ↓
-Data Validation & Cleaning (Auto-detect schema, drop duplicates, handle nulls)
+Data Validation & Cleaning (Auto-detect schema, drop duplicates, handle missing values)
         ↓
-Hybrid NLP Sentiment Engine (English + Tanglish transliterated lexicon)
+Hybrid NLP Sentiment Classifier (English + Tanglish transliterated lexicon & boosters)
         ↓
-Staging Area (Formatted streaming TSVs)
+HDFS / Local Staging Data Layer (/socialpulse/input/)
         ↓
-MapReduce Processing (5 Distinct Jobs: Mapper → Shuffle/Sort → Reducer)
+Hadoop MapReduce Processing (5 Distinct Jobs: Mapper → Sort & Shuffle → Reducer)
         ↓
 Trend Aggregation & SQLite Catalog
         ↓
-FastAPI Backend (/api/analytics, /api/mapreduce, /api/export)
+FastAPI Backend API (/docs interactive Swagger UI)
         ↓
-Interactive React + Vite Dashboard
+React + Vite Dark Analytics Dashboard (Recharts + Tailwind CSS)
 ```
 
 ---
@@ -82,11 +82,12 @@ Interactive React + Vite Dashboard
 
 - **Distributed Big Data Core:** Apache Hadoop, HDFS, Hadoop Streaming
 - **MapReduce Implementation:** Python 3 (`stdin` / `stdout` pipes) + Local MapReduce Simulation Framework
-- **Backend Framework:** FastAPI, Uvicorn, Pydantic, SQLite
+- **Backend Framework:** FastAPI, Uvicorn, Gunicorn, Pydantic, SQLite
 - **Data Engineering:** Pandas, NumPy
-- **NLP & Sentiment Analysis:** Custom Tanglish & Tamil Valence Lexicon + English VADER/AFINN-style booster engine
+- **NLP & Sentiment Analysis:** Custom Tanglish & Tamil Valence Lexicon + English booster engine
 - **Frontend Framework:** React 18, Vite, Tailwind CSS, Lucide React
-- **Data Visualizations:** Recharts (Donut charts, Bar charts, Area timeline charts, Progress bars)
+- **Data Visualizations:** Recharts (Donut, Bar, Area Timeline, Progress bars)
+- **Deployment & Hosting:** Vercel (Frontend), Render / Railway (Backend)
 - **Quality Assurance:** Pytest (18 unit & integration tests)
 
 ---
@@ -94,17 +95,17 @@ Interactive React + Vite Dashboard
 ## 5. Dataset Management & Tanglish Support
 
 ### Bundled Datasets
-- `backend/data/sample/sample_social_tanglish_english.csv`: 48 rich posts covering tech infrastructure, Chennai Metro, OMR traffic, telecom outages, cinema, and solar energy in English, Tanglish, and Tamil.
-- `backend/data/sample/sample_social_tweets.json`: Equivalent structured JSON format.
+1. `backend/data/sample/tamil_sentiment_clean.csv`: Full benchmark dataset containing **15,601 Tamil & Tanglish social posts**.
+2. `backend/data/sample/sample_social_tanglish_english.csv`: 48 rich posts covering tech infrastructure, Chennai Metro, OMR traffic, telecom outages, cinema, and solar energy in English, Tanglish, and Tamil.
+3. `backend/data/sample/sample_social_tweets.json`: Structured JSON format.
 
 ### Uploading Custom Datasets
 Users can upload any CSV or JSON file through the UI or via `POST /api/datasets/upload`. The system automatically:
 - Detects the text, timestamp, hashtags, author, and sentiment columns.
 - Removes duplicates and handles missing values.
-- Preserves the `original_text` while creating a normalized `cleaned_text` field.
+- Preserves the `original_text` while generating a normalized `cleaned_text` field.
 
 ### Tanglish Sentiment Lexicon
-The engine recognizes characteristic Tanglish tokens:
 - **Positive:** *semma (+3.4), mass (+3.2), vera level (+3.8), tharumaru (+3.5), super (+2.8), nalla (+2.2), azhagu (+2.5), magizhchi (+3.0), perumai (+3.0), vetri (+3.0)*
 - **Negative:** *mokka (-3.2), waste (-3.0), karumam (-3.6), mosam (-3.2), kevalam (-3.5), kodumai (-3.4), kashtam (-2.6), tholvi (-3.0), cringe (-2.8)*
 - **Intensifiers & Boosters:** *romba, semmaya, bayangara, migavum*
@@ -133,11 +134,9 @@ SocialPulse 360 provides 5 separate MapReduce jobs in `hadoop/mapper/` and `hado
 - **Node.js 18+** (Tested on Node.js v24.20.0)
 - **Git**
 
-### Step-by-Step Installation
-
 ```powershell
-# 1. Clone the repository
-git clone https://github.com/your-username/SocialPulse360.git
+# 1. Clone repository
+git clone https://github.com/loges-waran/SocialPulse360.git
 cd SocialPulse360
 
 # 2. Install Backend Python Dependencies
@@ -151,14 +150,13 @@ npm install
 
 ---
 
-## 8. Running the Application
+## 8. Running the Application Locally
 
 ### Option A: One-Click Startup (Windows)
 Double-click `scripts/run_all.bat` or run:
 ```powershell
 .\scripts\run_all.bat
 ```
-This automatically launches both backend and frontend in separate terminal windows.
 
 ### Option B: Manual Startup
 
@@ -167,27 +165,90 @@ This automatically launches both backend and frontend in separate terminal windo
 cd backend
 python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
 ```
-API runs at: `http://127.0.0.1:8000`  
-Interactive Swagger Docs: `http://127.0.0.1:8000/docs`
+- API: `http://127.0.0.1:8000`
+- Interactive Swagger Docs: `http://127.0.0.1:8000/docs`
 
 **Terminal 2 — Frontend:**
 ```powershell
 cd frontend
 npm run dev
 ```
-Dashboard opens at: `http://localhost:5173`
+- Dashboard: `http://localhost:5173`
 
 ---
 
-## 9. Hadoop Cluster & HDFS Instructions
+## 9. Production Deployment Guide (Vercel & Render)
 
-If you have Apache Hadoop installed, execute the jobs directly on your Hadoop cluster:
+This project is pre-configured for instant zero-configuration deployment on **Render** (Backend API) and **Vercel** (Frontend Dashboard).
+
+```
+                      User's Web Browser
+                             │
+            ┌────────────────┴────────────────┐
+            ▼                                 ▼
+   [Vercel Public URL]               [Render Public URL]
+  React + Vite Frontend              FastAPI Backend API
+(e.g., socialpulse.vercel.app)    (e.g., socialpulse-api.onrender.com)
+```
+
+### Part 1: Deploy Backend on Render (Python)
+
+1. Sign up / Log in to [Render](https://render.com/).
+2. Click **New +** $\rightarrow$ **Web Service**.
+3. Connect your GitHub repository: `https://github.com/loges-waran/SocialPulse360`.
+4. Configure the service:
+   - **Name:** `socialpulse360-api` (or your choice)
+   - **Region:** Any (e.g., Oregon or Frankfurt)
+   - **Branch:** `master` (or `main`)
+   - **Root Directory:** `backend`
+   - **Runtime:** `Python 3`
+   - **Build Command:** `pip install -r requirements.txt`
+   - **Start Command:** `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+5. Under **Environment Variables**, add:
+   - `PYTHON_VERSION` = `3.11.9`
+   - `CORS_ORIGINS` = `*`
+   - `HADOOP_MODE` = `local`
+6. Click **Deploy Web Service**.
+7. Once deployed, Render will provide a public URL (e.g. `https://socialpulse360-api.onrender.com`).
+   - Verify by visiting: `https://socialpulse360-api.onrender.com/api/health`
+   - Response: `{"status": "UP", "service": "SocialPulse 360", ...}`
+
+---
+
+### Part 2: Deploy Frontend on Vercel (React + Vite)
+
+1. Sign up / Log in to [Vercel](https://vercel.com/).
+2. Click **Add New...** $\rightarrow$ **Project**.
+3. Import your GitHub repository: `https://github.com/loges-waran/SocialPulse360`.
+4. In the configuration window:
+   - **Root Directory:** Click Edit and select `frontend` (or leave default if using root `vercel.json`).
+   - **Framework Preset:** `Vite`
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `dist`
+5. Under **Environment Variables**, add:
+   - **Name:** `VITE_API_BASE`
+   - **Value:** `https://socialpulse360-api.onrender.com` *(Paste your Render backend URL from Part 1, without trailing slash)*
+6. Click **Deploy**.
+7. Vercel will build and assign a public live URL (e.g., `https://socialpulse-360.vercel.app`).
+8. Open the URL to access your live dashboard!
+
+---
+
+### Part 3: Do I Need to Deploy Hadoop Separately?
+
+**No.** The platform features a dual-mode Big Data architecture:
+1. **Cloud Production Mode (Render / Vercel):** Operates using the built-in **Local MapReduce Engine** (`backend/app/mapreduce/local_runner.py`). This executes the actual Python Mapper and Reducer processes via standard Unix/Windows pipes, performs real key partitioning and sorting, and generates verifiable MapReduce metrics without needing a heavy Java Hadoop cluster on Render.
+2. **Cluster Mode (Optional / On-Premise):** The same mapper and reducer scripts in `hadoop/mapper/` and `hadoop/reducer/` can be submitted to an on-premise Apache Hadoop cluster using standard `hadoop-streaming.jar` commands.
+
+---
+
+## 10. Hadoop Cluster & HDFS Instructions
+
+If you have Apache Hadoop installed locally or on a server, run the cluster jobs directly:
 
 ### 1. Initialize HDFS Directories
 ```bash
 bash hadoop/scripts/hdfs_setup.sh
-# Or on Windows:
-hadoop\scripts\hdfs_setup.bat
 ```
 
 ### 2. Run Hadoop Streaming Jobs
@@ -200,8 +261,7 @@ hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-*.jar \
   -output /socialpulse/output/wordcount
 ```
 
-### 3. Local Standalone Simulation (Offline Mode)
-On machines without Hadoop installed, run the standalone simulation:
+### 3. Local Standalone Simulation (CLI)
 ```powershell
 cd hadoop/scripts
 python run_local_simulation.py --job wordcount
@@ -213,7 +273,7 @@ python run_local_simulation.py --job sentiment_words
 
 ---
 
-## 10. REST API Documentation
+## 11. REST API Documentation
 
 | Endpoint | Method | Description |
 | :--- | :--- | :--- |
@@ -231,93 +291,37 @@ python run_local_simulation.py --job sentiment_words
 
 ---
 
-## 11. Testing & Verification
+## 12. Testing & Verification
 
-Run the automated backend test suite:
+Run backend unit and integration tests:
 ```powershell
 cd backend
 python -m pytest -v
 ```
-**Results:** `18 passed in 8.22s`
-- Verified: Text cleaning, hashtag extraction, language detection, tokenization.
-- Verified: English and Tanglish positive, negative, and neutral sentiment classification.
-- Verified: Subprocess MapReduce execution, sort/shuffle phase, and reducer counts.
-- Verified: FastAPI health, datasets, analytics overview, and records pagination.
+**Results:** `18 passed in 10.42s (100% pass rate)`.
 
-Verify frontend build:
+Verify frontend production build:
 ```powershell
 cd frontend
 npm run build
 ```
-**Result:** `✓ built in 13.85s` with 0 errors.
+**Results:** `✓ built in 11.44s` with 0 errors.
 
 ---
 
-## 12. Limitations & Future Enhancements
+## 13. Limitations & Future Enhancements
 
 ### Limitations
-- Sarcasm detection in Tanglish is limited when contextual world knowledge is required.
-- Real-world social APIs (e.g., Twitter/X API) require paid developer credentials; thus, dataset upload and streaming file ingestion are prioritized.
+- Free tier hosting (Render) puts services to sleep after 15 minutes of inactivity; initial wakeup takes ~30-50 seconds.
+- Ephemeral container storage on free cloud tiers resets uploaded files on redeployment; bundled sample datasets persist permanently in Git.
 
 ### Future Enhancements
-- Integration with **Apache Spark Streaming** and **Kafka** for sub-second live tweet processing.
-- Fine-tuned transformer models (e.g., IndicBERT) for deep morphological Tamil disambiguation.
-- Geospatial mapping to highlight infrastructure complaints on OpenStreetMap.
+- Integration with Apache Kafka and Spark Streaming for live real-time ingestion.
+- Multilingual transformer fine-tuning (IndicBERT) for advanced syntactic ambiguity.
+- OpenStreetMap geospatial visualization for municipal complaints.
 
 ---
 
-## 13. GitHub Upload Instructions
-
-```powershell
-git init
-git add .
-git commit -m "feat: complete SocialPulse 360 Big Data Analytics project"
-git branch -M main
-git remote add origin https://github.com/your-username/SocialPulse360.git
-git push -u origin main
-```
-
----
-
-## License
+## 14. License
 
 This project is licensed under the [MIT License](LICENSE).
-=======
-# SocialPulse 360
-
-**Social Media Sentiment and Trend Analytics**
-
-SocialPulse 360 is a dashboard project that analyzes Tamil-English social media text using sentiment categories and word-frequency analysis.
-
-## Features
-
-- Sentiment analysis summary
-- Search social media text by word or phrase
-- Word-frequency and trend analytics
-- Interactive Streamlit dashboard
-- Apache Hadoop MapReduce word-count processing
-
-## Technology Stack
-
-- Python
-- Streamlit
-- Pandas
-- Apache Hadoop
-- MapReduce
-
-## Dataset
-
-The project uses a cleaned Tamil-English social media text dataset containing 15,601 records.
-
-The dataset is not included in this repository. Add the dataset locally before running the application.
-
-## Run Locally
-
-1. Install Python and Apache Hadoop.
-2. Install the required Python packages.
-3. Configure the dataset path in `app.py`.
-4. Start the dashboard:
-
-```bash
-streamlit run app.py
->>>>>>> 6f2a9c26f5f9223822b36825a40c9432cdfefaad

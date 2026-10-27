@@ -25,10 +25,17 @@ for directory in [DATA_DIR, RAW_DATA_DIR, PROCESSED_DATA_DIR, SAMPLE_DATA_DIR]:
 APP_NAME = "SocialPulse 360"
 APP_VERSION = "1.0.0"
 DESCRIPTION = "Big Data Social Media Sentiment & Trend Analytics Platform (Hadoop/MapReduce & NLP)"
-CORS_ORIGINS = [
+
+DEFAULT_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "*"
+    "http://127.0.0.1:3000"
 ]
+
+env_origins = os.environ.get("CORS_ORIGINS", "")
+if env_origins:
+    CORS_ORIGINS = [o.strip() for o in env_origins.split(",") if o.strip()]
+else:
+    CORS_ORIGINS = DEFAULT_ORIGINS
+
