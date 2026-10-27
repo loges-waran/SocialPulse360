@@ -1,11 +1,18 @@
 # SocialPulse 360 — Social Media Sentiment & Trend Analytics
 
+[![Live Demo](https://img.shields.io/badge/Live_Dashboard-social--pulse360.vercel.app-00dfa2?style=for-the-badge&logo=vercel&logoColor=white)](https://social-pulse360.vercel.app/)
+[![API Status](https://img.shields.io/badge/Backend_API-socialpulse360.onrender.com-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://socialpulse360.onrender.com/docs)
+
 [![Big Data Analytics](https://img.shields.io/badge/Big_Data-Hadoop_MapReduce-blue.svg)](https://hadoop.apache.org/)
 [![Python](https://img.shields.io/badge/Python-3.13-yellow.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688.svg)](https://fastapi.tiangolo.com/)
 [![React](https://img.shields.io/badge/Frontend-React_18_%2B_Vite-61DAFB.svg)](https://vitejs.dev/)
 [![SDG 9](https://img.shields.io/badge/SDG_9-Industry,_Innovation_%26_Infrastructure-FD6925.svg)](https://sdgs.un.org/goals/goal9)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+> 🌐 **Live Public Dashboard:** [https://social-pulse360.vercel.app/](https://social-pulse360.vercel.app/)  
+> ⚡ **Interactive API Swagger Docs:** [https://socialpulse360.onrender.com/docs](https://socialpulse360.onrender.com/docs)  
+> 🏥 **Backend Health Check:** [https://socialpulse360.onrender.com/api/health](https://socialpulse360.onrender.com/api/health)
 
 An industry-standard Big Data Analytics (BDA) platform designed to analyze **Tamil-English (Tanglish)** and **English** social media discourse. Built using **Apache Hadoop, HDFS, and MapReduce** concepts, an explainable **NLP Sentiment Classifier**, a **FastAPI backend**, and a modern **React + Vite dark-themed analytics dashboard**.
 
@@ -179,7 +186,13 @@ npm run dev
 
 ## 9. Production Deployment Guide (Vercel & Render)
 
-This project is pre-configured for instant zero-configuration deployment on **Render** (Backend API) and **Vercel** (Frontend Dashboard).
+The project is deployed and live at the following public endpoints:
+
+| Service | Hosting Platform | Live URL |
+| :--- | :--- | :--- |
+| **Frontend Web Dashboard** | **Vercel** | [https://social-pulse360.vercel.app/](https://social-pulse360.vercel.app/) |
+| **Backend API & Swagger Docs** | **Render** | [https://socialpulse360.onrender.com/docs](https://socialpulse360.onrender.com/docs) |
+| **Backend Health Check** | **Render** | [https://socialpulse360.onrender.com/api/health](https://socialpulse360.onrender.com/api/health) |
 
 ```
                       User's Web Browser
@@ -188,7 +201,7 @@ This project is pre-configured for instant zero-configuration deployment on **Re
             ▼                                 ▼
    [Vercel Public URL]               [Render Public URL]
   React + Vite Frontend              FastAPI Backend API
-(e.g., socialpulse.vercel.app)    (e.g., socialpulse-api.onrender.com)
+https://social-pulse360.vercel.app   https://socialpulse360.onrender.com
 ```
 
 ### Part 1: Deploy Backend on Render (Python)

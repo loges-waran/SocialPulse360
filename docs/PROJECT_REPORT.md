@@ -125,16 +125,20 @@ The MapReduce engine partitions the analytical workload across mapper and reduce
 
 The platform was verified using real sample datasets containing English, Tanglish, and Tamil social media posts:
 
-- **Total Records Processed:** 48 records
-- **Map Input Records:** 48 lines
+- **Total Records Processed:** 48 sample records & 15,601 full benchmark Tamil records
+- **Map Input Records:** 48 lines (sample) / 15,601 lines (benchmark)
 - **Total Map Output Pairs Emitted:** 833 pairs (WordCount), 270 pairs (HashtagCount)
 - **Distinct Partitioned Keys:** 529 keys (WordCount), 106 keys (HashtagCount)
-- **Sentiment Distribution:**
+- **Sentiment Distribution (Sample):**
   - Positive: 45.83% (22 posts)
   - Negative: 33.33% (16 posts)
   - Neutral: 20.83% (10 posts)
-- **Pipeline Execution Latency:** ~280 ms (Local MapReduce engine) / Sub-second throughput
+- **Pipeline Execution Latency:** ~280 ms (sample) / ~8.8s (15,601 records)
 - **Automated Tests:** 18 out of 18 unit and integration tests passed with 100% success rate.
+- **Production Live Deployment:**
+  - **Live Web Dashboard:** [https://social-pulse360.vercel.app/](https://social-pulse360.vercel.app/) (Vercel)
+  - **Live Backend API & Swagger Docs:** [https://socialpulse360.onrender.com/docs](https://socialpulse360.onrender.com/docs) (Render)
+  - **Health Check Endpoint:** [https://socialpulse360.onrender.com/api/health](https://socialpulse360.onrender.com/api/health)
 
 ---
 
